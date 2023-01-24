@@ -26,7 +26,7 @@ import (
 
 func main() {
 	client := br.NewClient()
-	rates, err := client.GetRates(br.CNY, br.Novosibirsk)
+	rates, err := client.Rates(br.CNY, br.Novosibirsk)
 	if err != nil {
 		panic(err)
 	}
@@ -39,7 +39,7 @@ Console output:
 ```json
 {
     "currency": "CNY",
-    "region": "novosibirsk",
+    "city": "novosibirsk",
     "branches": [
         {
             "bank": "Банк «Открытие»",
@@ -59,4 +59,4 @@ See [main.go](./_example/main.go).
 
 For more information check out the following links:
 
-* Cash currency exchange rates by [banki.ru](https://www.banki.ru/products/currency/cash/moskva/) (RU)
+* Cash currency exchange rates by [Banki.ru](https://www.banki.ru/products/currency/cash/moskva/) (RU)

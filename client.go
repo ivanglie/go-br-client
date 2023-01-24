@@ -25,37 +25,37 @@ const (
 	CZK Currency = "CZK"
 	PLN Currency = "PLN"
 
-	// Region
-	Barnaul         Region = "barnaul"
-	Voronezh        Region = "voronezh"
-	Volgograd       Region = "volgograd"
-	Vladivostok     Region = "vladivostok"
-	Ekaterinburg    Region = "ekaterinburg"
-	Irkutsk         Region = "irkutsk"
-	Izhevsk         Region = "izhevsk"
-	Kazan           Region = "kazan~"
-	Krasnodar       Region = "krasnodar"
-	Krasnoyarsk     Region = "krasnoyarsk"
-	Kaliningrad     Region = "kaliningrad"
-	Kirov           Region = "kirov"
-	Kemerovo        Region = "kemerovo"
-	Moscow          Region = "moskva"
-	Novosibirsk     Region = "novosibirsk"
-	NizhnyNovgorod  Region = "nizhniy_novgorod"
-	Omsk            Region = "omsk"
-	Orenburg        Region = "orenburg"
-	Perm            Region = "perm~"
-	RostovOnDon     Region = "rostov-na-donu"
-	SaintPetersburg Region = "sankt-peterburg"
-	Samara          Region = "samara"
-	Saratov         Region = "saratov"
-	Sochi           Region = "krasnodarskiy_kray/sochi"
-	Tyumen          Region = "tyumen~"
-	Tolyatti        Region = "samarskaya_oblast~/tol~yatti"
-	Tomsk           Region = "tomsk"
-	Ufa             Region = "ufa"
-	Khabarovsk      Region = "habarovsk"
-	Chelyabinsk     Region = "chelyabinsk"
+	// City
+	Barnaul         City = "barnaul"
+	Voronezh        City = "voronezh"
+	Volgograd       City = "volgograd"
+	Vladivostok     City = "vladivostok"
+	Ekaterinburg    City = "ekaterinburg"
+	Irkutsk         City = "irkutsk"
+	Izhevsk         City = "izhevsk"
+	Kazan           City = "kazan~"
+	Krasnodar       City = "krasnodar"
+	Krasnoyarsk     City = "krasnoyarsk"
+	Kaliningrad     City = "kaliningrad"
+	Kirov           City = "kirov"
+	Kemerovo        City = "kemerovo"
+	Moscow          City = "moskva"
+	Novosibirsk     City = "novosibirsk"
+	NizhnyNovgorod  City = "nizhniy_novgorod"
+	Omsk            City = "omsk"
+	Orenburg        City = "orenburg"
+	Perm            City = "perm~"
+	RostovOnDon     City = "rostov-na-donu"
+	SaintPetersburg City = "sankt-peterburg"
+	Samara          City = "samara"
+	Saratov         City = "saratov"
+	Sochi           City = "krasnodarskiy_kray/sochi"
+	Tyumen          City = "tyumen~"
+	Tolyatti        City = "samarskaya_oblast~/tol~yatti"
+	Tomsk           City = "tomsk"
+	Ufa             City = "ufa"
+	Khabarovsk      City = "habarovsk"
+	Chelyabinsk     City = "chelyabinsk"
 )
 
 type Client struct {
@@ -78,39 +78,59 @@ func NewClient() *Client {
 
 var Debug bool
 
-// Get cash currency exchange rates by currency (USD, if empty) and region (Moscow, if empty).
-func (s *Client) GetRates(c Currency, r Region) (*Rates, error) {
-	if len(c) == 0 {
-		c = USD
+// Rates by currency (USD, if empty) and city (Moscow, if empty).
+func (c *Client) Rates(crnc Currency, ct City) (*Rates, error) {
+	if len(crnc) == 0 {
+		crnc = USD
 	}
 
-	if len(r) == 0 {
-		r = Moscow
+	if len(ct) == 0 {
+		ct = Moscow
 	}
 
-	url := fmt.Sprintf(baseURL, strings.ToLower(string(c)), r)
+	url := fmt.Sprintf(baseURL, strings.ToLower(string(crnc)), ct)
 	if Debug {
 		log.Printf("Fetching the currency rate from %s", url)
 	}
 
-	rates := &Rates{Currency: c, Region: r}
-	branches, err := s.parseBranches(url)
+	r := &Rates{Currency: crnc, City: ct}
+	b, err := c.parseBranches(url)
 	if err != nil {
-		rates = nil
+		r = nil
 	} else {
-		rates.Branches = branches
+		r.Branches = b
 	}
 
-	return rates, err
+	return r, err
 }
 
 // Parse banks and their branches info.
-func (s *Client) parseBranches(url string) ([]Branch, error) {
-	var branches []Branch
+func (c *Client) parseBranches(url string) ([]Branch, error) {
+	var b []Branch
 	var err error
 
-	s.collector.OnHTML("div.table-flex.trades-table.table-product", func(e *colly.HTMLElement) {
+	c.collector.OnHTML("div.table-flex.trades-table.table-product", func(e *colly.HTMLElement) {
 		e.ForEach("div.table-flex__row.item.calculator-hover-icon__container", func(i int, row *colly.HTMLElement) {
+			var location *time.Location
+			location, err = time.LoadLocation("Europe/Moscow")
+			if err != nil {
+				log.Println(err)
+				return
+			}
+
+			var updated time.Time
+			updated, err = time.ParseInLocation("02.01.2006 15:04", row.ChildText("span.text-nowrap"), location)
+			if err != nil {
+				log.Println(err)
+				return
+			}
+
+			if time.Now().In(location).Sub(updated) > 24*time.Hour {
+				err = fmt.Errorf("exchange rate is out of date for 24 hours: %v", updated)
+				log.Println(err)
+				return
+			}
+
 			bank := row.ChildText("a.font-bold")
 
 			a := strings.Split(row.ChildAttr("a.font-bold", "data-currency-rates-tab-item"), "_")
@@ -133,37 +153,23 @@ func (s *Client) parseBranches(url string) ([]Branch, error) {
 				return
 			}
 
-			var location *time.Location
-			location, err = time.LoadLocation("Europe/Moscow")
-			if err != nil {
-				log.Println(err)
-				return
-			}
-
-			var updated time.Time
-			updated, err = time.ParseInLocation("02.01.2006 15:04", row.ChildText("span.text-nowrap"), location)
-			if err != nil {
-				log.Println(err)
-				return
-			}
-
 			raw := newBranch(bank, address, subway, currency, buy, sell, updated)
-			if raw != (Branch{}) && time.Now().In(location).Sub(updated) < 24*time.Hour && (buy != 0 || sell != 0) {
-				branches = append(branches, raw)
+			if raw != (Branch{}) && (buy != 0 || sell != 0) {
+				b = append(b, raw)
 			}
 		})
 	})
 
-	s.collector.OnRequest(func(r *colly.Request) {
+	c.collector.OnRequest(func(r *colly.Request) {
 		log.Printf("UserAgent: %s", r.Headers.Get("User-Agent"))
 	})
 
-	s.collector.OnError(func(r *colly.Response, e error) {
+	c.collector.OnError(func(r *colly.Response, e error) {
 		err = e
 		log.Println(err)
 	})
 
-	err = s.collector.Visit(url)
+	err = c.collector.Visit(url)
 
-	return branches, err
+	return b, err
 }
