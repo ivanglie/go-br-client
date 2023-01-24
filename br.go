@@ -18,16 +18,15 @@ type Branch struct {
 }
 
 type Currency string
-type Region string
+type City string
 
-// Cash currency exchange rates by banks and their branches.
+// Rates by banks and their branches.
 type Rates struct {
 	Currency Currency `json:"currency"`
-	Region   Region   `json:"region"`
+	City     City     `json:"city"`
 	Branches []Branch `json:"branches"`
 }
 
-// New branch (bank).
 func newBranch(bank, address, subway, currency string, buy, sell float64, updated time.Time) Branch {
 	return Branch{bank, address, subway, currency, buy, sell, updated}
 }
