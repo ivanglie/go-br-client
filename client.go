@@ -60,6 +60,7 @@ const (
 
 type Client struct {
 	collector *colly.Collector
+	url       string
 }
 
 func NewClient() *Client {
@@ -73,7 +74,7 @@ func NewClient() *Client {
 
 	extensions.RandomUserAgent(c)
 
-	return &Client{c}
+	return &Client{c, ""}
 }
 
 var Debug bool
@@ -88,13 +89,16 @@ func (c *Client) Rates(crnc Currency, ct City) (*Rates, error) {
 		ct = Moscow
 	}
 
-	url := fmt.Sprintf(baseURL, strings.ToLower(string(crnc)), ct)
+	if len(c.url) == 0 { // for tests
+		c.url = fmt.Sprintf(baseURL, strings.ToLower(string(crnc)), ct)
+	}
+
 	if Debug {
-		log.Printf("Fetching the currency rate from %s", url)
+		log.Printf("Fetching the currency rate from %s", c.url)
 	}
 
 	r := &Rates{Currency: crnc, City: ct}
-	b, err := c.parseBranches(url)
+	b, err := c.parseBranches()
 	if err != nil {
 		r = nil
 	} else {
@@ -105,7 +109,7 @@ func (c *Client) Rates(crnc Currency, ct City) (*Rates, error) {
 }
 
 // Parse banks and their branches info.
-func (c *Client) parseBranches(url string) ([]Branch, error) {
+func (c *Client) parseBranches() ([]Branch, error) {
 	var b []Branch
 	var err error
 
@@ -169,7 +173,7 @@ func (c *Client) parseBranches(url string) ([]Branch, error) {
 		log.Println(err)
 	})
 
-	err = c.collector.Visit(url)
+	err = c.collector.Visit(c.url)
 
 	return b, err
 }

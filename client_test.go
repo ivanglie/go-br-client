@@ -6,19 +6,24 @@ import (
 	"testing"
 )
 
-func Test_parseBranches(t *testing.T) {
+func TestClient_Rates(t *testing.T) {
 	dir, _ := os.Getwd()
 	absFilePath := filepath.Join(dir, "/test/bankiru")
 
-	b, _ := NewClient().parseBranches("file:" + absFilePath)
-
-	if len(b) == 0 {
-		t.Errorf("currency.branches is empty")
+	c := NewClient()
+	c.url = "file:" + absFilePath
+	r, err := c.Rates("", "")
+	if err != nil {
+		t.Error(err)
 	}
 
-	branchesCount := len(b)
+	b := r.Branches
+	if len(b) == 0 {
+		t.Error("b is empty")
+	}
 
-	if branchesCount != 5 {
-		t.Errorf("branchesCount got = %v, want %v", branchesCount, 5)
+	bCount := len(b)
+	if bCount != 5 {
+		t.Errorf("bCount got = %v, want %v", bCount, 5)
 	}
 }
