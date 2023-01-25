@@ -8,10 +8,9 @@ import (
 
 func TestClient_Rates(t *testing.T) {
 	dir, _ := os.Getwd()
-	absFilePath := filepath.Join(dir, "/test/bankiru")
 
 	c := NewClient()
-	c.url = "file:" + absFilePath
+	c.url = "file:" + filepath.Join(dir, "/test/bankiru")
 	r, err := c.Rates("", "")
 	if err != nil {
 		t.Error(err)
@@ -25,5 +24,16 @@ func TestClient_Rates(t *testing.T) {
 	bCount := len(b)
 	if bCount != 5 {
 		t.Errorf("bCount got = %v, want %v", bCount, 5)
+	}
+}
+
+func TestClient_RatesError(t *testing.T) {
+	dir, _ := os.Getwd()
+
+	c := NewClient()
+	c.url = "file:" + filepath.Join(dir, "/test/invalid-bankiru")
+	_, err := c.Rates("", "")
+	if err == nil {
+		t.Error(err)
 	}
 }
