@@ -28,6 +28,8 @@ func TestClient_Rates(t *testing.T) {
 }
 
 func TestClient_RatesError(t *testing.T) {
+	Debug = true
+
 	dir, _ := os.Getwd()
 
 	c := NewClient()

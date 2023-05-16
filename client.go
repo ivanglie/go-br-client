@@ -12,10 +12,10 @@ import (
 )
 
 const (
-	// Example: https://www.banki.ru/products/currency/cash/usd/moskva/
+	// Example: https://www.banki.ru/products/currency/cash/usd/moskva/.
 	baseURL = "https://www.banki.ru/products/currency/cash/%s/%s/"
 
-	// Currency
+	// Currency.
 	USD Currency = "USD"
 	EUR Currency = "EUR"
 	GBP Currency = "GBP"
@@ -25,7 +25,7 @@ const (
 	CZK Currency = "CZK"
 	PLN Currency = "PLN"
 
-	// City
+	// City.
 	Barnaul         City = "barnaul"
 	Voronezh        City = "voronezh"
 	Volgograd       City = "volgograd"
@@ -58,25 +58,28 @@ const (
 	Chelyabinsk     City = "chelyabinsk"
 )
 
+// Client type.
 type Client struct {
 	collector *colly.Collector
 	url       string
 }
 
+// NewClient creates a new client.
 func NewClient() *Client {
-	c := colly.NewCollector()
+	c := &Client{collector: colly.NewCollector()}
 
 	t := &http.Transport{}
 	t.RegisterProtocol("file", http.NewFileTransport(http.Dir("/")))
 
-	c.WithTransport(t)
-	c.AllowURLRevisit = true
+	c.collector.WithTransport(t)
+	c.collector.AllowURLRevisit = true
 
-	extensions.RandomUserAgent(c)
+	extensions.RandomUserAgent(c.collector)
 
-	return &Client{c, ""}
+	return c
 }
 
+// Debug mode. Default: false.
 var Debug bool
 
 // Rates by currency (USD, if empty) and city (Moscow, if empty).
@@ -165,7 +168,9 @@ func (c *Client) parseBranches() ([]Branch, error) {
 	})
 
 	c.collector.OnRequest(func(r *colly.Request) {
-		log.Printf("UserAgent: %s", r.Headers.Get("User-Agent"))
+		if Debug {
+			log.Printf("UserAgent: %s", r.Headers.Get("User-Agent"))
+		}
 	})
 
 	c.collector.OnError(func(r *colly.Response, e error) {
