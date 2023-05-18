@@ -64,17 +64,22 @@ var (
 	Ct    City     = Moscow // Default city.
 )
 
+//go:generate moq -out mock_urlinterface.go . URLInterface:MockURL
+
+// URLInterface type for mocking URL.
 type URLInterface interface {
 	build() string
 }
 
+// URL.
 type URL struct{}
 
+// build URL.
 func (u *URL) build() string {
 	return fmt.Sprintf(baseURL, strings.ToLower(string(Crnc)), Ct)
 }
 
-// Client type.
+// Client.
 type Client struct {
 	collector *colly.Collector
 	url       URLInterface
