@@ -46,7 +46,7 @@ func TestClient_RatesError(t *testing.T) {
 
 func TestURL_build(t *testing.T) {
 	buildURL := func() string {
-		return fmt.Sprintf(baseURL, strings.ToLower(string(Crnc)), Ct)
+		return fmt.Sprintf(baseURL, strings.ToLower(string(USD)), Moscow)
 	}
 
 	want := (NewClient()).buildURL()
