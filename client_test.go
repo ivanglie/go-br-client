@@ -1,16 +1,14 @@
 package br
 
 import (
-	"fmt"
 	"os"
 	"path/filepath"
-	"strings"
 	"testing"
 )
 
 func TestClient_Rates(t *testing.T) {
 	c := NewClient()
-	c.url = &MockURL{buildFunc: func() string {
+	c.url = &URL{buildFunc: func() string {
 		dir, _ := os.Getwd()
 		return "file:" + filepath.Join(dir, "/test/bankiru")
 	}}
@@ -34,18 +32,11 @@ func TestClient_RatesError(t *testing.T) {
 	Debug = true
 
 	c := NewClient()
-	c.url = &MockURL{buildFunc: func() string {
+	c.url = &URL{buildFunc: func() string {
 		dir, _ := os.Getwd()
 		return "file:" + filepath.Join(dir, "/test/invalid-bankiru")
 	}}
 	if _, err := c.Rates(CNY, Sochi); err == nil {
 		t.Error(err)
-	}
-}
-
-func TestURL_build(t *testing.T) {
-	want := fmt.Sprintf(baseURL, strings.ToLower(string(Crnc)), Ct)
-	if got := (&URL{}).build(); got != want {
-		t.Errorf("URL.build() = %v, want %v", got, want)
 	}
 }

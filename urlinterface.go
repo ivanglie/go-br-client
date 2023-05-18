@@ -7,16 +7,16 @@ import (
 	"sync"
 )
 
-// Ensure, that MockURL does implement URLInterface.
+// Ensure, that URL does implement URLInterface.
 // If this is not the case, regenerate this file with moq.
-var _ URLInterface = &MockURL{}
+var _ URLInterface = &URL{}
 
-// MockURL is a mock implementation of URLInterface.
+// URL is a mock implementation of URLInterface.
 //
 //	func TestSomethingThatUsesURLInterface(t *testing.T) {
 //
 //		// make and configure a mocked URLInterface
-//		mockedURLInterface := &MockURL{
+//		mockedURLInterface := &URL{
 //			buildFunc: func() string {
 //				panic("mock out the build method")
 //			},
@@ -26,7 +26,7 @@ var _ URLInterface = &MockURL{}
 //		// and then make assertions.
 //
 //	}
-type MockURL struct {
+type URL struct {
 	// buildFunc mocks the build method.
 	buildFunc func() string
 
@@ -40,9 +40,9 @@ type MockURL struct {
 }
 
 // build calls buildFunc.
-func (mock *MockURL) build() string {
+func (mock *URL) build() string {
 	if mock.buildFunc == nil {
-		panic("MockURL.buildFunc: method is nil but URLInterface.build was just called")
+		panic("URL.buildFunc: method is nil but URLInterface.build was just called")
 	}
 	callInfo := struct {
 	}{}
@@ -56,7 +56,7 @@ func (mock *MockURL) build() string {
 // Check the length with:
 //
 //	len(mockedURLInterface.buildCalls())
-func (mock *MockURL) buildCalls() []struct {
+func (mock *URL) buildCalls() []struct {
 } {
 	var calls []struct {
 	}
