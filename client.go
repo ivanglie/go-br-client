@@ -85,7 +85,7 @@ func NewClient() *Client {
 	t := &http.Transport{}
 	t.RegisterProtocol("file", http.NewFileTransport(http.Dir("/")))
 
-	c := &Client{collector: colly.NewCollector(colly.AllowURLRevisit())}
+	c := &Client{collector: colly.NewCollector(colly.AllowURLRevisit()), url: &URL{}}
 	c.collector.WithTransport(t)
 	extensions.RandomUserAgent(c.collector)
 
