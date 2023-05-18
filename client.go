@@ -64,11 +64,19 @@ var (
 	Ct    City     = Moscow // Default city.
 )
 
-//go:generate moq -out urlinterface.go . URLInterface:URL
+//go:generate moq -out mock_urlinterface.go . URLInterface:MockURL
 
 // URLInterface type for mocking URL.
 type URLInterface interface {
 	build() string
+}
+
+// URL.
+type URL struct{}
+
+// build URL.
+func (u *URL) build() string {
+	return fmt.Sprintf(baseURL, strings.ToLower(string(Crnc)), Ct)
 }
 
 // Client.
@@ -85,10 +93,6 @@ func NewClient() *Client {
 	c := &Client{collector: colly.NewCollector(colly.AllowURLRevisit())}
 	c.collector.WithTransport(t)
 	extensions.RandomUserAgent(c.collector)
-
-	c.url = &URL{buildFunc: func() string {
-		return fmt.Sprintf(baseURL, strings.ToLower(string(Crnc)), Ct)
-	}}
 
 	return c
 }
