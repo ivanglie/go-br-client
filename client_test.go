@@ -8,23 +8,12 @@ import (
 	"testing"
 )
 
-type MockURL struct{}
-
-func (m *MockURL) build() string {
-	dir, _ := os.Getwd()
-	return "file:" + filepath.Join(dir, "/test/bankiru")
-}
-
-type MockInvalidURL struct{}
-
-func (m *MockInvalidURL) build() string {
-	dir, _ := os.Getwd()
-	return "file:" + filepath.Join(dir, "/test/invalid-bankiru")
-}
-
 func TestClient_Rates(t *testing.T) {
 	c := NewClient()
-	c.url = &MockURL{}
+	c.url.buildFunc = func() string {
+		dir, _ := os.Getwd()
+		return "file:" + filepath.Join(dir, "/test/bankiru")
+	}
 
 	r, err := c.Rates("", "")
 	if err != nil {
@@ -45,15 +34,24 @@ func TestClient_RatesError(t *testing.T) {
 	Debug = true
 
 	c := NewClient()
-	c.url = &MockInvalidURL{}
+	c.url.buildFunc = func() string {
+		dir, _ := os.Getwd()
+		return "file:" + filepath.Join(dir, "/test/invalid-bankiru")
+	}
+
 	if _, err := c.Rates(CNY, Sochi); err == nil {
 		t.Error(err)
 	}
 }
 
 func TestURL_build(t *testing.T) {
+	url := &URL{buildFunc: func() string {
+		return fmt.Sprintf(baseURL, strings.ToLower(string(Crnc)), Ct)
+	}}
+
 	want := fmt.Sprintf(baseURL, strings.ToLower(string(Crnc)), Ct)
-	if got := (&URL{}).build(); got != want {
+
+	if got := url.build(); got != want {
 		t.Errorf("URL.build() = %v, want %v", got, want)
 	}
 }

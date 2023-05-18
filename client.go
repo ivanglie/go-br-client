@@ -64,28 +64,34 @@ var (
 	Ct    City     = Moscow // Default city.
 )
 
-type URLInterface interface {
-	build() string
+// URL type.
+type URL struct {
+	buildFunc func() string
 }
 
-type URL struct{}
-
+// build returns a URL.
 func (u *URL) build() string {
-	return fmt.Sprintf(baseURL, strings.ToLower(string(Crnc)), Ct)
+	return u.buildFunc()
 }
 
-// Client type.
+// Client.
 type Client struct {
 	collector *colly.Collector
-	url       URLInterface
+	url       *URL
 }
 
 // NewClient creates a new client.
 func NewClient() *Client {
+	c := &Client{
+		collector: colly.NewCollector(colly.AllowURLRevisit()),
+		url: &URL{buildFunc: func() string {
+			return fmt.Sprintf(baseURL, strings.ToLower(string(Crnc)), Ct)
+		}},
+	}
+
 	t := &http.Transport{}
 	t.RegisterProtocol("file", http.NewFileTransport(http.Dir("/")))
 
-	c := &Client{collector: colly.NewCollector(colly.AllowURLRevisit()), url: &URL{}}
 	c.collector.WithTransport(t)
 	extensions.RandomUserAgent(c.collector)
 
