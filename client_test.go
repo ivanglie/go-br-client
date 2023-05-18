@@ -1,16 +1,31 @@
 package br
 
 import (
+	"fmt"
 	"os"
 	"path/filepath"
+	"strings"
 	"testing"
 )
 
-func TestClient_Rates(t *testing.T) {
-	dir, _ := os.Getwd()
+type MockURL struct{}
 
+func (m *MockURL) build() string {
+	dir, _ := os.Getwd()
+	return "file:" + filepath.Join(dir, "/test/bankiru")
+}
+
+type MockInvalidURL struct{}
+
+func (m *MockInvalidURL) build() string {
+	dir, _ := os.Getwd()
+	return "file:" + filepath.Join(dir, "/test/invalid-bankiru")
+}
+
+func TestClient_Rates(t *testing.T) {
 	c := NewClient()
-	c.url = "file:" + filepath.Join(dir, "/test/bankiru")
+	c.url = &MockURL{}
+
 	r, err := c.Rates("", "")
 	if err != nil {
 		t.Error(err)
@@ -21,8 +36,7 @@ func TestClient_Rates(t *testing.T) {
 		t.Error("b is empty")
 	}
 
-	bCount := len(b)
-	if bCount != 5 {
+	if bCount := len(b); bCount != 5 {
 		t.Errorf("bCount got = %v, want %v", bCount, 5)
 	}
 }
@@ -30,12 +44,16 @@ func TestClient_Rates(t *testing.T) {
 func TestClient_RatesError(t *testing.T) {
 	Debug = true
 
-	dir, _ := os.Getwd()
-
 	c := NewClient()
-	c.url = "file:" + filepath.Join(dir, "/test/invalid-bankiru")
-	_, err := c.Rates("", "")
-	if err == nil {
+	c.url = &MockInvalidURL{}
+	if _, err := c.Rates(CNY, Sochi); err == nil {
 		t.Error(err)
+	}
+}
+
+func TestURL_build(t *testing.T) {
+	want := fmt.Sprintf(baseURL, strings.ToLower(string(Crnc)), Ct)
+	if got := (&URL{}).build(); got != want {
+		t.Errorf("URL.build() = %v, want %v", got, want)
 	}
 }

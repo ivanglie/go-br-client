@@ -58,10 +58,26 @@ const (
 	Chelyabinsk     City = "chelyabinsk"
 )
 
+var (
+	Debug bool              // Debug mode. Default: false.
+	Crnc  Currency = USD    // Default currency.
+	Ct    City     = Moscow // Default city.
+)
+
+type URLInterface interface {
+	build() string
+}
+
+type URL struct{}
+
+func (u *URL) build() string {
+	return fmt.Sprintf(baseURL, strings.ToLower(string(Crnc)), Ct)
+}
+
 // Client type.
 type Client struct {
 	collector *colly.Collector
-	url       string
+	url       URLInterface
 }
 
 // NewClient creates a new client.
@@ -79,25 +95,18 @@ func NewClient() *Client {
 	return c
 }
 
-// Debug mode. Default: false.
-var Debug bool
-
 // Rates by currency (USD, if empty) and city (Moscow, if empty).
 func (c *Client) Rates(crnc Currency, ct City) (*Rates, error) {
-	if len(crnc) == 0 {
-		crnc = USD
+	if len(crnc) > 0 {
+		Crnc = crnc
 	}
 
-	if len(ct) == 0 {
-		ct = Moscow
-	}
-
-	if len(c.url) == 0 { // for tests
-		c.url = fmt.Sprintf(baseURL, strings.ToLower(string(crnc)), ct)
+	if len(ct) > 0 {
+		Ct = ct
 	}
 
 	if Debug {
-		log.Printf("Fetching the currency rate from %s", c.url)
+		log.Printf("Fetching the currency rate from %s", c.url.build())
 	}
 
 	r := &Rates{Currency: crnc, City: ct}
@@ -178,7 +187,7 @@ func (c *Client) parseBranches() ([]Branch, error) {
 		log.Println(err)
 	})
 
-	err = c.collector.Visit(c.url)
+	err = c.collector.Visit(c.url.build())
 
 	return b, err
 }
