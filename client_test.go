@@ -8,12 +8,23 @@ import (
 	"testing"
 )
 
+type MockURL struct{}
+
+func (m *MockURL) build() string {
+	dir, _ := os.Getwd()
+	return "file:" + filepath.Join(dir, "/test/bankiru")
+}
+
+type MockInvalidURL struct{}
+
+func (m *MockInvalidURL) build() string {
+	dir, _ := os.Getwd()
+	return "file:" + filepath.Join(dir, "/test/invalid-bankiru")
+}
+
 func TestClient_Rates(t *testing.T) {
 	c := NewClient()
-	c.url = &MockURL{buildFunc: func() string {
-		dir, _ := os.Getwd()
-		return "file:" + filepath.Join(dir, "/test/bankiru")
-	}}
+	c.url = &MockURL{}
 
 	r, err := c.Rates("", "")
 	if err != nil {
@@ -34,10 +45,7 @@ func TestClient_RatesError(t *testing.T) {
 	Debug = true
 
 	c := NewClient()
-	c.url = &MockURL{buildFunc: func() string {
-		dir, _ := os.Getwd()
-		return "file:" + filepath.Join(dir, "/test/invalid-bankiru")
-	}}
+	c.url = &MockInvalidURL{}
 	if _, err := c.Rates(CNY, Sochi); err == nil {
 		t.Error(err)
 	}
