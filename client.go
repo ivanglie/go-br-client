@@ -64,29 +64,19 @@ var (
 	Ct    City     = Moscow // Default city.
 )
 
-// URL type.
-type URL struct {
-	buildFunc func() string
-}
-
-// build returns a URL.
-func (u *URL) build() string {
-	return u.buildFunc()
-}
-
 // Client.
 type Client struct {
 	collector *colly.Collector
-	url       *URL
+	buildURL  func() string
 }
 
 // NewClient creates a new client.
 func NewClient() *Client {
 	c := &Client{
 		collector: colly.NewCollector(colly.AllowURLRevisit()),
-		url: &URL{buildFunc: func() string {
+		buildURL: func() string {
 			return fmt.Sprintf(baseURL, strings.ToLower(string(Crnc)), Ct)
-		}},
+		},
 	}
 
 	t := &http.Transport{}
@@ -109,7 +99,7 @@ func (c *Client) Rates(crnc Currency, ct City) (*Rates, error) {
 	}
 
 	if Debug {
-		log.Printf("Fetching the currency rate from %s", c.url.build())
+		log.Printf("Fetching the currency rate from %s", c.buildURL())
 	}
 
 	r := &Rates{Currency: crnc, City: ct}
@@ -190,7 +180,7 @@ func (c *Client) parseBranches() ([]Branch, error) {
 		log.Println(err)
 	})
 
-	err = c.collector.Visit(c.url.build())
+	err = c.collector.Visit(c.buildURL())
 
 	return b, err
 }

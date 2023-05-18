@@ -10,7 +10,7 @@ import (
 
 func TestClient_Rates(t *testing.T) {
 	c := NewClient()
-	c.url.buildFunc = func() string {
+	c.buildURL = func() string {
 		dir, _ := os.Getwd()
 		return "file:" + filepath.Join(dir, "/test/bankiru")
 	}
@@ -34,7 +34,7 @@ func TestClient_RatesError(t *testing.T) {
 	Debug = true
 
 	c := NewClient()
-	c.url.buildFunc = func() string {
+	c.buildURL = func() string {
 		dir, _ := os.Getwd()
 		return "file:" + filepath.Join(dir, "/test/invalid-bankiru")
 	}
@@ -45,13 +45,13 @@ func TestClient_RatesError(t *testing.T) {
 }
 
 func TestURL_build(t *testing.T) {
-	url := &URL{buildFunc: func() string {
+	buildURL := func() string {
 		return fmt.Sprintf(baseURL, strings.ToLower(string(Crnc)), Ct)
-	}}
+	}
 
-	want := (NewClient()).url.build()
+	want := (NewClient()).buildURL()
 
-	if got := url.build(); got != want {
+	if got := buildURL(); got != want {
 		t.Errorf("URL.build() = %v, want %v", got, want)
 	}
 }
