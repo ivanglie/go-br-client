@@ -82,14 +82,11 @@ type Client struct {
 
 // NewClient creates a new client.
 func NewClient() *Client {
-	c := &Client{collector: colly.NewCollector()}
-
 	t := &http.Transport{}
 	t.RegisterProtocol("file", http.NewFileTransport(http.Dir("/")))
 
+	c := &Client{collector: colly.NewCollector(colly.AllowURLRevisit())}
 	c.collector.WithTransport(t)
-	c.collector.AllowURLRevisit = true
-
 	extensions.RandomUserAgent(c.collector)
 
 	return c
