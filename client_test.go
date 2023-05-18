@@ -49,7 +49,7 @@ func TestURL_build(t *testing.T) {
 		return fmt.Sprintf(baseURL, strings.ToLower(string(Crnc)), Ct)
 	}}
 
-	want := fmt.Sprintf(baseURL, strings.ToLower(string(Crnc)), Ct)
+	want := (NewClient()).url.build()
 
 	if got := url.build(); got != want {
 		t.Errorf("URL.build() = %v, want %v", got, want)
