@@ -67,8 +67,8 @@ var (
 type Client struct {
 	currency  Currency
 	city      City
-	collector *colly.Collector
 	buildURL  func() string
+	collector *colly.Collector
 }
 
 // NewClient creates a new client.

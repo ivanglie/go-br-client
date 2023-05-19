@@ -1,6 +1,7 @@
 package br
 
 import (
+	"math"
 	"reflect"
 	"sort"
 	"testing"
@@ -83,5 +84,11 @@ func TestRates_String(t *testing.T) {
 
 	if got != want {
 		t.Errorf("got= %v, want= %v", got, want)
+	}
+
+	// Negative case
+	r.Branches[0].Sell = math.NaN()
+	if got = r.String(); len(got) > 0 {
+		t.Errorf("got = %v, want \"\" (emtpy)", got)
 	}
 }
