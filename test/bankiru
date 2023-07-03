@@ -1,325 +1,574 @@
-<!doctype html>
-<html class="env-no-js env-desktop " data-ui-version="2013" prefix="ya: http://webmaster.yandex.ru/vocabularies/
-og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/"
-	xmlns:fb="http://www.facebook.com/2008/fbml" lang="ru">
+<div class="mapListstyled__StyledMapList-sc-294xv0-0 fdpae">
+    <div direction="vert" class="FlexboxGrid__sc-akw86o-0 jkNAek">
+        <div direction="vert" class="FlexboxGrid__sc-akw86o-0 iAgrFj">
+            <div direction="vert" class="FlexboxGrid__sc-akw86o-0 jkNAek">
+                <!-- SUCESS -->
+                <div>
+                    <section class="Panel__sc-1g68tnu-1 JpzER resultItemMapstyled__StyledPanel-sc-komxja-0 gPOMIy">
+                        <div class="Panel__sc-1g68tnu-0 cieTjP">
+                            <div direction="vert" class="FlexboxGrid__sc-akw86o-0 gXguwc">
+                                <div direction="vert"
+                                    class="FlexboxGrid__sc-akw86o-0 ipZNf resultItemMapstyled__StyledWrapperResult-sc-komxja-3 cITBmP">
+                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 ffxYsz">
+                                        <div direction="vert" class="FlexboxGrid__sc-akw86o-0 gXguwc">
+                                            <div data-test="text" class="Text__sc-j452t5-0 dPnGDN">Филиал Невский</div>
+                                        </div><img src="//static3.banki.ru/ugc/74/3b/ec/0a/68665.png"
+                                            alt="Филиал Невский"
+                                            class="resultItemMapstyled__StyledLogo-sc-komxja-4 eufxij">
+                                    </div>
+                                    <div direction="vert" class="FlexboxGrid__sc-akw86o-0 jkNAek">
+                                        <div direction="row" class="FlexboxGrid__sc-akw86o-0 eNzgjv">
+                                            <div class="FlexboxGridItem__sc-1crr98y-0 fcKIDw">
+                                                <div direction="vert" class="FlexboxGrid__sc-akw86o-0 dELgzc">
+                                                    <div data-test="text" class="Text__sc-j452t5-0 efivpt">Покупка</div>
+                                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 gkHuDs">
+                                                        <div
+                                                            class="resultItemMapstyled__StyledExchange-sc-komxja-6 inKcdh">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="none">
+                                                                <path fill="#039BE5"
+                                                                    d="M1.837 1.837c2.449-2.45 13.877-2.45 16.326 0 2.45 2.449 2.45 13.877 0 16.326-2.449 2.45-13.877 2.45-16.326 0-2.45-2.449-2.45-13.877 0-16.326z">
+                                                                </path>
+                                                            </svg>
+                                                            <div data-test="text"
+                                                                class="Text__sc-j452t5-0 cjnWKp resultItemMapstyled__StyledRateText-sc-komxja-7 cuJoGj">
+                                                                $</div>
+                                                        </div>
+                                                        <div data-test="text" class="Text__sc-j452t5-0 guOAzm">87,25 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="FlexboxGridItem__sc-1crr98y-0 fcKIDw">
+                                                <div direction="vert" class="FlexboxGrid__sc-akw86o-0 dELgzc">
+                                                    <div data-test="text" class="Text__sc-j452t5-0 efivpt">Продажа</div>
+                                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 gkHuDs">
+                                                        <div
+                                                            class="resultItemMapstyled__StyledExchange-sc-komxja-6 inKcdh">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="none">
+                                                                <path fill="#039BE5"
+                                                                    d="M1.837 1.837c2.449-2.45 13.877-2.45 16.326 0 2.45 2.449 2.45 13.877 0 16.326-2.449 2.45-13.877 2.45-16.326 0-2.45-2.449-2.45-13.877 0-16.326z">
+                                                                </path>
+                                                            </svg>
+                                                            <div data-test="text"
+                                                                class="Text__sc-j452t5-0 cjnWKp resultItemMapstyled__StyledRateText-sc-komxja-7 cuJoGj">
+                                                                $</div>
+                                                        </div>
+                                                        <div data-test="text" class="Text__sc-j452t5-0 guOAzm">89,25 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-test="text" class="Text__sc-j452t5-0 kiIzbr">Обновление: 03.07.2123
+                                            16:23</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-</head>
+                <!-- SUCESS -->
+                <div>
+                    <section class="Panel__sc-1g68tnu-1 JpzER resultItemMapstyled__StyledPanel-sc-komxja-0 gPOMIy">
+                        <div class="Panel__sc-1g68tnu-0 cieTjP">
+                            <div direction="vert" class="FlexboxGrid__sc-akw86o-0 gXguwc">
+                                <div direction="vert"
+                                    class="FlexboxGrid__sc-akw86o-0 ipZNf resultItemMapstyled__StyledWrapperResult-sc-komxja-3 cITBmP">
+                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 ffxYsz">
+                                        <div direction="vert" class="FlexboxGrid__sc-akw86o-0 gXguwc">
+                                            <div data-test="text" class="Text__sc-j452t5-0 dPnGDN">ДО "Новосибирск"
+                                            </div>
+                                            <div data-test="text" class="Text__sc-j452t5-0 eybsgm">Площадь Ленина,
+                                                Красный проспект, Площадь Гарина-Михайловского</div>
+                                        </div><img src="//static4.banki.ru/ugc/5e/e9/17/b8/189914.png"
+                                            alt="ДО &quot;Новосибирск&quot;"
+                                            class="resultItemMapstyled__StyledLogo-sc-komxja-4 eufxij">
+                                    </div>
+                                    <div direction="vert" class="FlexboxGrid__sc-akw86o-0 jkNAek">
+                                        <div direction="row" class="FlexboxGrid__sc-akw86o-0 eNzgjv">
+                                            <div class="FlexboxGridItem__sc-1crr98y-0 fcKIDw">
+                                                <div direction="vert" class="FlexboxGrid__sc-akw86o-0 dELgzc">
+                                                    <div data-test="text" class="Text__sc-j452t5-0 efivpt">Покупка</div>
+                                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 gkHuDs">
+                                                        <div
+                                                            class="resultItemMapstyled__StyledExchange-sc-komxja-6 inKcdh">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="none">
+                                                                <path fill="#039BE5"
+                                                                    d="M1.837 1.837c2.449-2.45 13.877-2.45 16.326 0 2.45 2.449 2.45 13.877 0 16.326-2.449 2.45-13.877 2.45-16.326 0-2.45-2.449-2.45-13.877 0-16.326z">
+                                                                </path>
+                                                            </svg>
+                                                            <div data-test="text"
+                                                                class="Text__sc-j452t5-0 cjnWKp resultItemMapstyled__StyledRateText-sc-komxja-7 cuJoGj">
+                                                                $</div>
+                                                        </div>
+                                                        <div data-test="text" class="Text__sc-j452t5-0 guOAzm">87 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="FlexboxGridItem__sc-1crr98y-0 fcKIDw">
+                                                <div direction="vert" class="FlexboxGrid__sc-akw86o-0 dELgzc">
+                                                    <div data-test="text" class="Text__sc-j452t5-0 efivpt">Продажа</div>
+                                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 gkHuDs">
+                                                        <div
+                                                            class="resultItemMapstyled__StyledExchange-sc-komxja-6 inKcdh">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="none">
+                                                                <path fill="#039BE5"
+                                                                    d="M1.837 1.837c2.449-2.45 13.877-2.45 16.326 0 2.45 2.449 2.45 13.877 0 16.326-2.449 2.45-13.877 2.45-16.326 0-2.45-2.449-2.45-13.877 0-16.326z">
+                                                                </path>
+                                                            </svg>
+                                                            <div data-test="text"
+                                                                class="Text__sc-j452t5-0 cjnWKp resultItemMapstyled__StyledRateText-sc-komxja-7 cuJoGj">
+                                                                $</div>
+                                                        </div>
+                                                        <div data-test="text" class="Text__sc-j452t5-0 guOAzm">89,55 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-test="text" class="Text__sc-j452t5-0 kiIzbr">Обновление: 03.07.2123
+                                            16:06</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
 
-<body>
-	<div class="table-flex trades-table table-product">
-		<div data-currencies-row-container>
+                <!-- SUCESS -->
+                <div>
+                    <section class="Panel__sc-1g68tnu-1 JpzER resultItemMapstyled__StyledPanel-sc-komxja-0 gPOMIy">
+                        <div class="Panel__sc-1g68tnu-0 cieTjP">
+                            <div direction="vert" class="FlexboxGrid__sc-akw86o-0 gXguwc">
+                                <div direction="vert"
+                                    class="FlexboxGrid__sc-akw86o-0 ipZNf resultItemMapstyled__StyledWrapperResult-sc-komxja-3 cITBmP">
+                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 ffxYsz">
+                                        <div direction="vert" class="FlexboxGrid__sc-akw86o-0 gXguwc">
+                                            <div data-test="text" class="Text__sc-j452t5-0 dPnGDN">"АК БАРС" Банк - пр.
+                                                Димитрова, 7</div>
+                                            <div data-test="text" class="Text__sc-j452t5-0 eybsgm">Площадь Ленина,
+                                                Красный проспект, Площадь Гарина-Михайловского</div>
+                                        </div><img src="//static3.banki.ru/ugc/02/5f/fc/e3/36119.png"
+                                            alt="&quot;АК БАРС&quot; Банк - пр. Димитрова, 7"
+                                            class="resultItemMapstyled__StyledLogo-sc-komxja-4 eufxij">
+                                    </div>
+                                    <div direction="vert" class="FlexboxGrid__sc-akw86o-0 jkNAek">
+                                        <div direction="row" class="FlexboxGrid__sc-akw86o-0 eNzgjv">
+                                            <div class="FlexboxGridItem__sc-1crr98y-0 fcKIDw">
+                                                <div direction="vert" class="FlexboxGrid__sc-akw86o-0 dELgzc">
+                                                    <div data-test="text" class="Text__sc-j452t5-0 efivpt">Покупка</div>
+                                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 gkHuDs">
+                                                        <div
+                                                            class="resultItemMapstyled__StyledExchange-sc-komxja-6 inKcdh">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="none">
+                                                                <path fill="#039BE5"
+                                                                    d="M1.837 1.837c2.449-2.45 13.877-2.45 16.326 0 2.45 2.449 2.45 13.877 0 16.326-2.449 2.45-13.877 2.45-16.326 0-2.45-2.449-2.45-13.877 0-16.326z">
+                                                                </path>
+                                                            </svg>
+                                                            <div data-test="text"
+                                                                class="Text__sc-j452t5-0 cjnWKp resultItemMapstyled__StyledRateText-sc-komxja-7 cuJoGj">
+                                                                $</div>
+                                                        </div>
+                                                        <div data-test="text" class="Text__sc-j452t5-0 guOAzm">86,78 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="FlexboxGridItem__sc-1crr98y-0 fcKIDw">
+                                                <div direction="vert" class="FlexboxGrid__sc-akw86o-0 dELgzc">
+                                                    <div data-test="text" class="Text__sc-j452t5-0 efivpt">Продажа</div>
+                                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 gkHuDs">
+                                                        <div
+                                                            class="resultItemMapstyled__StyledExchange-sc-komxja-6 inKcdh">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="none">
+                                                                <path fill="#039BE5"
+                                                                    d="M1.837 1.837c2.449-2.45 13.877-2.45 16.326 0 2.45 2.449 2.45 13.877 0 16.326-2.449 2.45-13.877 2.45-16.326 0-2.45-2.449-2.45-13.877 0-16.326z">
+                                                                </path>
+                                                            </svg>
+                                                            <div data-test="text"
+                                                                class="Text__sc-j452t5-0 cjnWKp resultItemMapstyled__StyledRateText-sc-komxja-7 cuJoGj">
+                                                                $</div>
+                                                        </div>
+                                                        <div data-test="text" class="Text__sc-j452t5-0 guOAzm">89,28 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-test="text" class="Text__sc-j452t5-0 kiIzbr">Обновление: 03.07.2123
+                                            16:24</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
 
-			<!-- Branch 1 (good) -->
-			<div data-test="exchange-row" class="exchange-calculator-rates table-flex__row-group " data-row-group>
-				<div data-row-item class="table-flex__row item calculator-hover-icon__container">
-					<div class="table-flex__cell trades-table__name">
+                <!-- SUCESS -->
+                <div>
+                    <section class="Panel__sc-1g68tnu-1 JpzER resultItemMapstyled__StyledPanel-sc-komxja-0 gPOMIy">
+                        <div class="Panel__sc-1g68tnu-0 cieTjP">
+                            <div direction="vert" class="FlexboxGrid__sc-akw86o-0 gXguwc">
+                                <div direction="vert"
+                                    class="FlexboxGrid__sc-akw86o-0 ipZNf resultItemMapstyled__StyledWrapperResult-sc-komxja-3 cITBmP">
+                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 ffxYsz">
+                                        <div direction="vert" class="FlexboxGrid__sc-akw86o-0 gXguwc">
+                                            <div data-test="text" class="Text__sc-j452t5-0 dPnGDN">ДО "Новосибирский"
+                                                Ф-ла Сибирский ПАО Банк "ФК Открытие"</div>
+                                            <div data-test="text" class="Text__sc-j452t5-0 eybsgm">Октябрьская, Речной
+                                                вокзал, Площадь Ленина</div>
+                                        </div><img src="//static3.banki.ru/ugc/40/2d/13/cb/690.png"
+                                            alt="ДО  &quot;Новосибирский&quot; Ф-ла Сибирский ПАО Банк &quot;ФК Открытие&quot;"
+                                            class="resultItemMapstyled__StyledLogo-sc-komxja-4 eufxij">
+                                    </div>
+                                    <div direction="vert" class="FlexboxGrid__sc-akw86o-0 jkNAek">
+                                        <div direction="row" class="FlexboxGrid__sc-akw86o-0 eNzgjv">
+                                            <div class="FlexboxGridItem__sc-1crr98y-0 fcKIDw">
+                                                <div direction="vert" class="FlexboxGrid__sc-akw86o-0 dELgzc">
+                                                    <div data-test="text" class="Text__sc-j452t5-0 efivpt">Покупка</div>
+                                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 gkHuDs">
+                                                        <div
+                                                            class="resultItemMapstyled__StyledExchange-sc-komxja-6 inKcdh">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="none">
+                                                                <path fill="#039BE5"
+                                                                    d="M1.837 1.837c2.449-2.45 13.877-2.45 16.326 0 2.45 2.449 2.45 13.877 0 16.326-2.449 2.45-13.877 2.45-16.326 0-2.45-2.449-2.45-13.877 0-16.326z">
+                                                                </path>
+                                                            </svg>
+                                                            <div data-test="text"
+                                                                class="Text__sc-j452t5-0 cjnWKp resultItemMapstyled__StyledRateText-sc-komxja-7 cuJoGj">
+                                                                $</div>
+                                                        </div>
+                                                        <div data-test="text" class="Text__sc-j452t5-0 guOAzm">86,50 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="FlexboxGridItem__sc-1crr98y-0 fcKIDw">
+                                                <div direction="vert" class="FlexboxGrid__sc-akw86o-0 dELgzc">
+                                                    <div data-test="text" class="Text__sc-j452t5-0 efivpt">Продажа</div>
+                                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 gkHuDs">
+                                                        <div
+                                                            class="resultItemMapstyled__StyledExchange-sc-komxja-6 inKcdh">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="none">
+                                                                <path fill="#039BE5"
+                                                                    d="M1.837 1.837c2.449-2.45 13.877-2.45 16.326 0 2.45 2.449 2.45 13.877 0 16.326-2.449 2.45-13.877 2.45-16.326 0-2.45-2.449-2.45-13.877 0-16.326z">
+                                                                </path>
+                                                            </svg>
+                                                            <div data-test="text"
+                                                                class="Text__sc-j452t5-0 cjnWKp resultItemMapstyled__StyledRateText-sc-komxja-7 cuJoGj">
+                                                                $</div>
+                                                        </div>
+                                                        <div data-test="text" class="Text__sc-j452t5-0 guOAzm">89,90 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-test="text" class="Text__sc-j452t5-0 kiIzbr">Обновление: 03.07.2123
+                                            16:23</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
 
-						<a class="font-bold" href="/products/currency/exchange/14731/" data-test="bank-name"
-							data-currency-rates-tab-item="bank_code_isb|address_г. Москва, ул. Барклая дом 8"
-							data-currencies-bank-name>1st Good Bank</a>
-						<div class="font-size-small">
-							м. Багратионовская
-						</div>
-					</div>
+                <!-- FAIL: without buy rate -->
+                <div>
+                    <section class="Panel__sc-1g68tnu-1 JpzER resultItemMapstyled__StyledPanel-sc-komxja-0 gPOMIy">
+                        <div class="Panel__sc-1g68tnu-0 cieTjP">
+                            <div direction="vert" class="FlexboxGrid__sc-akw86o-0 gXguwc">
+                                <div direction="vert"
+                                    class="FlexboxGrid__sc-akw86o-0 ipZNf resultItemMapstyled__StyledWrapperResult-sc-komxja-3 cITBmP">
+                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 ffxYsz">
+                                        <div direction="vert" class="FlexboxGrid__sc-akw86o-0 gXguwc">
+                                            <div data-test="text" class="Text__sc-j452t5-0 dPnGDN">ДО "Новосибирский"
+                                                Ф-ла Сибирский ПАО Банк "ФК Открытие"</div>
+                                            <div data-test="text" class="Text__sc-j452t5-0 eybsgm">Октябрьская, Речной
+                                                вокзал, Площадь Ленина</div>
+                                        </div><img src="//static3.banki.ru/ugc/40/2d/13/cb/690.png"
+                                            alt="ДО  &quot;Новосибирский&quot; Ф-ла Сибирский ПАО Банк &quot;ФК Открытие&quot;"
+                                            class="resultItemMapstyled__StyledLogo-sc-komxja-4 eufxij">
+                                    </div>
+                                    <div direction="vert" class="FlexboxGrid__sc-akw86o-0 jkNAek">
+                                        <div direction="row" class="FlexboxGrid__sc-akw86o-0 eNzgjv">
+                                            <div class="FlexboxGridItem__sc-1crr98y-0 fcKIDw">
+                                                <div direction="vert" class="FlexboxGrid__sc-akw86o-0 dELgzc">
+                                                    <div data-test="text" class="Text__sc-j452t5-0 efivpt">Покупка</div>
+                                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 gkHuDs">
+                                                        <div
+                                                            class="resultItemMapstyled__StyledExchange-sc-komxja-6 inKcdh">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="none">
+                                                                <path fill="#039BE5"
+                                                                    d="M1.837 1.837c2.449-2.45 13.877-2.45 16.326 0 2.45 2.449 2.45 13.877 0 16.326-2.449 2.45-13.877 2.45-16.326 0-2.45-2.449-2.45-13.877 0-16.326z">
+                                                                </path>
+                                                            </svg>
+                                                            <div data-test="text"
+                                                                class="Text__sc-j452t5-0 cjnWKp resultItemMapstyled__StyledRateText-sc-komxja-7 cuJoGj">
+                                                                $</div>
+                                                        </div>
+                                                        <div data-test="text" class="Text__sc-j452t5-0 guOAzm"><!--86,50 ₽-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="FlexboxGridItem__sc-1crr98y-0 fcKIDw">
+                                                <div direction="vert" class="FlexboxGrid__sc-akw86o-0 dELgzc">
+                                                    <div data-test="text" class="Text__sc-j452t5-0 efivpt">Продажа</div>
+                                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 gkHuDs">
+                                                        <div
+                                                            class="resultItemMapstyled__StyledExchange-sc-komxja-6 inKcdh">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="none">
+                                                                <path fill="#039BE5"
+                                                                    d="M1.837 1.837c2.449-2.45 13.877-2.45 16.326 0 2.45 2.449 2.45 13.877 0 16.326-2.449 2.45-13.877 2.45-16.326 0-2.45-2.449-2.45-13.877 0-16.326z">
+                                                                </path>
+                                                            </svg>
+                                                            <div data-test="text"
+                                                                class="Text__sc-j452t5-0 cjnWKp resultItemMapstyled__StyledRateText-sc-komxja-7 cuJoGj">
+                                                                $</div>
+                                                        </div>
+                                                        <div data-test="text" class="Text__sc-j452t5-0 guOAzm">89,90 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-test="text" class="Text__sc-j452t5-0 kiIzbr">Обновление: 03.07.2123
+                                            16:23</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
 
-					<div class="table-flex__rate font-size-large color-pumpkin-orange " data-currencies-rate-buy="71.40"
-						data-currencies-code="USD">
-						71,40 ₽
-						<div class="trades-table__refresh-time" data-test="date-update">
-							<span>Время обновления:</span>
-							<span class="text-nowrap">31.12.2123 13:13</span>
-						</div>
-					</div>
-					<div class="table-flex__rate font-size-large   text-nowrap" data-currencies-rate-sell="73.8"
-						data-currencies-code="USD"
-						data-currency-rates-tab-item="tab_open_currency_converter|currencies_rate_sale|currency_USD|bank_code_isb">
-						73,80 ₽
-					</div>
-				</div>
-			</div>
+                <!-- FAIL: without sell rate -->
+                <div>
+                    <section class="Panel__sc-1g68tnu-1 JpzER resultItemMapstyled__StyledPanel-sc-komxja-0 gPOMIy">
+                        <div class="Panel__sc-1g68tnu-0 cieTjP">
+                            <div direction="vert" class="FlexboxGrid__sc-akw86o-0 gXguwc">
+                                <div direction="vert"
+                                    class="FlexboxGrid__sc-akw86o-0 ipZNf resultItemMapstyled__StyledWrapperResult-sc-komxja-3 cITBmP">
+                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 ffxYsz">
+                                        <div direction="vert" class="FlexboxGrid__sc-akw86o-0 gXguwc">
+                                            <div data-test="text" class="Text__sc-j452t5-0 dPnGDN">ДО "Новосибирский"
+                                                Ф-ла Сибирский ПАО Банк "ФК Открытие"</div>
+                                            <div data-test="text" class="Text__sc-j452t5-0 eybsgm">Октябрьская, Речной
+                                                вокзал, Площадь Ленина</div>
+                                        </div><img src="//static3.banki.ru/ugc/40/2d/13/cb/690.png"
+                                            alt="ДО  &quot;Новосибирский&quot; Ф-ла Сибирский ПАО Банк &quot;ФК Открытие&quot;"
+                                            class="resultItemMapstyled__StyledLogo-sc-komxja-4 eufxij">
+                                    </div>
+                                    <div direction="vert" class="FlexboxGrid__sc-akw86o-0 jkNAek">
+                                        <div direction="row" class="FlexboxGrid__sc-akw86o-0 eNzgjv">
+                                            <div class="FlexboxGridItem__sc-1crr98y-0 fcKIDw">
+                                                <div direction="vert" class="FlexboxGrid__sc-akw86o-0 dELgzc">
+                                                    <div data-test="text" class="Text__sc-j452t5-0 efivpt">Покупка</div>
+                                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 gkHuDs">
+                                                        <div
+                                                            class="resultItemMapstyled__StyledExchange-sc-komxja-6 inKcdh">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="none">
+                                                                <path fill="#039BE5"
+                                                                    d="M1.837 1.837c2.449-2.45 13.877-2.45 16.326 0 2.45 2.449 2.45 13.877 0 16.326-2.449 2.45-13.877 2.45-16.326 0-2.45-2.449-2.45-13.877 0-16.326z">
+                                                                </path>
+                                                            </svg>
+                                                            <div data-test="text"
+                                                                class="Text__sc-j452t5-0 cjnWKp resultItemMapstyled__StyledRateText-sc-komxja-7 cuJoGj">
+                                                                $</div>
+                                                        </div>
+                                                        <div data-test="text" class="Text__sc-j452t5-0 guOAzm">86,50 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="FlexboxGridItem__sc-1crr98y-0 fcKIDw">
+                                                <div direction="vert" class="FlexboxGrid__sc-akw86o-0 dELgzc">
+                                                    <div data-test="text" class="Text__sc-j452t5-0 efivpt">Продажа</div>
+                                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 gkHuDs">
+                                                        <div
+                                                            class="resultItemMapstyled__StyledExchange-sc-komxja-6 inKcdh">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="none">
+                                                                <path fill="#039BE5"
+                                                                    d="M1.837 1.837c2.449-2.45 13.877-2.45 16.326 0 2.45 2.449 2.45 13.877 0 16.326-2.449 2.45-13.877 2.45-16.326 0-2.45-2.449-2.45-13.877 0-16.326z">
+                                                                </path>
+                                                            </svg>
+                                                            <div data-test="text"
+                                                                class="Text__sc-j452t5-0 cjnWKp resultItemMapstyled__StyledRateText-sc-komxja-7 cuJoGj">
+                                                                $</div>
+                                                        </div>
+                                                        <div data-test="text" class="Text__sc-j452t5-0 guOAzm"><!--89,90 ₽-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-test="text" class="Text__sc-j452t5-0 kiIzbr">Обновление: 03.07.2123
+                                            16:23</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
 
-			<!-- Branches -->
-			<div data-test="exchange-row" class="exchange-calculator-rates table-flex__row-group " data-row-group>
+                <!-- FAIL: incorrect date format -->
+                <div>
+                    <section class="Panel__sc-1g68tnu-1 JpzER resultItemMapstyled__StyledPanel-sc-komxja-0 gPOMIy">
+                        <div class="Panel__sc-1g68tnu-0 cieTjP">
+                            <div direction="vert" class="FlexboxGrid__sc-akw86o-0 gXguwc">
+                                <div direction="vert"
+                                    class="FlexboxGrid__sc-akw86o-0 ipZNf resultItemMapstyled__StyledWrapperResult-sc-komxja-3 cITBmP">
+                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 ffxYsz">
+                                        <div direction="vert" class="FlexboxGrid__sc-akw86o-0 gXguwc">
+                                            <div data-test="text" class="Text__sc-j452t5-0 dPnGDN">ДО "Новосибирский"
+                                                Ф-ла Сибирский ПАО Банк "ФК Открытие"</div>
+                                            <div data-test="text" class="Text__sc-j452t5-0 eybsgm">Октябрьская, Речной
+                                                вокзал, Площадь Ленина</div>
+                                        </div><img src="//static3.banki.ru/ugc/40/2d/13/cb/690.png"
+                                            alt="ДО  &quot;Новосибирский&quot; Ф-ла Сибирский ПАО Банк &quot;ФК Открытие&quot;"
+                                            class="resultItemMapstyled__StyledLogo-sc-komxja-4 eufxij">
+                                    </div>
+                                    <div direction="vert" class="FlexboxGrid__sc-akw86o-0 jkNAek">
+                                        <div direction="row" class="FlexboxGrid__sc-akw86o-0 eNzgjv">
+                                            <div class="FlexboxGridItem__sc-1crr98y-0 fcKIDw">
+                                                <div direction="vert" class="FlexboxGrid__sc-akw86o-0 dELgzc">
+                                                    <div data-test="text" class="Text__sc-j452t5-0 efivpt">Покупка</div>
+                                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 gkHuDs">
+                                                        <div
+                                                            class="resultItemMapstyled__StyledExchange-sc-komxja-6 inKcdh">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="none">
+                                                                <path fill="#039BE5"
+                                                                    d="M1.837 1.837c2.449-2.45 13.877-2.45 16.326 0 2.45 2.449 2.45 13.877 0 16.326-2.449 2.45-13.877 2.45-16.326 0-2.45-2.449-2.45-13.877 0-16.326z">
+                                                                </path>
+                                                            </svg>
+                                                            <div data-test="text"
+                                                                class="Text__sc-j452t5-0 cjnWKp resultItemMapstyled__StyledRateText-sc-komxja-7 cuJoGj">
+                                                                $</div>
+                                                        </div>
+                                                        <div data-test="text" class="Text__sc-j452t5-0 guOAzm">86,50 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="FlexboxGridItem__sc-1crr98y-0 fcKIDw">
+                                                <div direction="vert" class="FlexboxGrid__sc-akw86o-0 dELgzc">
+                                                    <div data-test="text" class="Text__sc-j452t5-0 efivpt">Продажа</div>
+                                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 gkHuDs">
+                                                        <div
+                                                            class="resultItemMapstyled__StyledExchange-sc-komxja-6 inKcdh">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="none">
+                                                                <path fill="#039BE5"
+                                                                    d="M1.837 1.837c2.449-2.45 13.877-2.45 16.326 0 2.45 2.449 2.45 13.877 0 16.326-2.449 2.45-13.877 2.45-16.326 0-2.45-2.449-2.45-13.877 0-16.326z">
+                                                                </path>
+                                                            </svg>
+                                                            <div data-test="text"
+                                                                class="Text__sc-j452t5-0 cjnWKp resultItemMapstyled__StyledRateText-sc-komxja-7 cuJoGj">
+                                                                $</div>
+                                                        </div>
+                                                        <div data-test="text" class="Text__sc-j452t5-0 guOAzm">89,90 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-test="text" class="Text__sc-j452t5-0 kiIzbr">Обновление: 03072123
+                                            16:23</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
 
-				<!-- Branch 2 (good) -->
-				<div data-row-item class="table-flex__row item calculator-hover-icon__container">
-					<div class="table-flex__cell trades-table__name">
+                <!-- FAIL: not actual updated date -->
+                <div>
+                    <section class="Panel__sc-1g68tnu-1 JpzER resultItemMapstyled__StyledPanel-sc-komxja-0 gPOMIy">
+                        <div class="Panel__sc-1g68tnu-0 cieTjP">
+                            <div direction="vert" class="FlexboxGrid__sc-akw86o-0 gXguwc">
+                                <div direction="vert"
+                                    class="FlexboxGrid__sc-akw86o-0 ipZNf resultItemMapstyled__StyledWrapperResult-sc-komxja-3 cITBmP">
+                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 ffxYsz">
+                                        <div direction="vert" class="FlexboxGrid__sc-akw86o-0 gXguwc">
+                                            <div data-test="text" class="Text__sc-j452t5-0 dPnGDN">ДО "Новосибирский"
+                                                Ф-ла Сибирский ПАО Банк "ФК Открытие"</div>
+                                            <div data-test="text" class="Text__sc-j452t5-0 eybsgm">Октябрьская, Речной
+                                                вокзал, Площадь Ленина</div>
+                                        </div><img src="//static3.banki.ru/ugc/40/2d/13/cb/690.png"
+                                            alt="ДО  &quot;Новосибирский&quot; Ф-ла Сибирский ПАО Банк &quot;ФК Открытие&quot;"
+                                            class="resultItemMapstyled__StyledLogo-sc-komxja-4 eufxij">
+                                    </div>
+                                    <div direction="vert" class="FlexboxGrid__sc-akw86o-0 jkNAek">
+                                        <div direction="row" class="FlexboxGrid__sc-akw86o-0 eNzgjv">
+                                            <div class="FlexboxGridItem__sc-1crr98y-0 fcKIDw">
+                                                <div direction="vert" class="FlexboxGrid__sc-akw86o-0 dELgzc">
+                                                    <div data-test="text" class="Text__sc-j452t5-0 efivpt">Покупка</div>
+                                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 gkHuDs">
+                                                        <div
+                                                            class="resultItemMapstyled__StyledExchange-sc-komxja-6 inKcdh">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="none">
+                                                                <path fill="#039BE5"
+                                                                    d="M1.837 1.837c2.449-2.45 13.877-2.45 16.326 0 2.45 2.449 2.45 13.877 0 16.326-2.449 2.45-13.877 2.45-16.326 0-2.45-2.449-2.45-13.877 0-16.326z">
+                                                                </path>
+                                                            </svg>
+                                                            <div data-test="text"
+                                                                class="Text__sc-j452t5-0 cjnWKp resultItemMapstyled__StyledRateText-sc-komxja-7 cuJoGj">
+                                                                $</div>
+                                                        </div>
+                                                        <div data-test="text" class="Text__sc-j452t5-0 guOAzm">86,50 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="FlexboxGridItem__sc-1crr98y-0 fcKIDw">
+                                                <div direction="vert" class="FlexboxGrid__sc-akw86o-0 dELgzc">
+                                                    <div data-test="text" class="Text__sc-j452t5-0 efivpt">Продажа</div>
+                                                    <div direction="row" class="FlexboxGrid__sc-akw86o-0 gkHuDs">
+                                                        <div
+                                                            class="resultItemMapstyled__StyledExchange-sc-komxja-6 inKcdh">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="none">
+                                                                <path fill="#039BE5"
+                                                                    d="M1.837 1.837c2.449-2.45 13.877-2.45 16.326 0 2.45 2.449 2.45 13.877 0 16.326-2.449 2.45-13.877 2.45-16.326 0-2.45-2.449-2.45-13.877 0-16.326z">
+                                                                </path>
+                                                            </svg>
+                                                            <div data-test="text"
+                                                                class="Text__sc-j452t5-0 cjnWKp resultItemMapstyled__StyledRateText-sc-komxja-7 cuJoGj">
+                                                                $</div>
+                                                        </div>
+                                                        <div data-test="text" class="Text__sc-j452t5-0 guOAzm">89,90 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-test="text" class="Text__sc-j452t5-0 kiIzbr">Обновление: 03.07.2022
+                                            16:23</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
 
-						<a class="font-bold" href="/products/currency/exchange/12987/" data-test="bank-name"
-							data-currency-rates-tab-item="bank_code_kazanbank|address_Москва, улица Куусинена, 4Ак1 "
-							data-currencies-bank-name>2d Good Bank</a>
-						<div class="font-size-small">
-							м. Полежаевская
-						</div>
-
-
-						<div class="margin-top-x-small font-size-default">
-							<span class="link-with-icon" data-click="toggle-more-offices" data-hide="is-open">
-								<span class="link-with-icon__text pseudo-link">еще 1
-									обменный пункт</span>
-								<span
-									class="link-with-icon__icon icon-font icon-arrow-down-16 icon-font--size_small color-border-dark"></span>
-							</span>
-							<span class="link-with-icon is-hidden" data-click="toggle-more-offices" data-show="is-open">
-								<span class="link-with-icon__text pseudo-link">свернуть</span>
-								<span
-									class="link-with-icon__icon icon-font icon-arrow-top-16 icon-font--size_small color-border-dark"></span>
-							</span>
-						</div>
-					</div>
-
-					<div class="table-flex__rate font-size-large  " data-currencies-rate-buy="71.2"
-						data-currencies-code="USD">
-						71,20 ₽
-						<div class="trades-table__refresh-time" data-test="date-update">
-							<span>Время обновления:</span>
-							<span class="text-nowrap">31.12.2123 13:12</span>
-						</div>
-					</div>
-					<div class="table-flex__rate font-size-large   text-nowrap" data-currencies-rate-sell="74.49"
-						data-currencies-code="USD"
-						data-currency-rates-tab-item="tab_open_currency_converter|currencies_rate_sale|currency_USD|bank_code_kazanbank">
-						74,49 ₽
-					</div>
-				</div>
-
-				<!-- Branch 3 (good) -->
-				<div data-row-item class="table-flex__row item calculator-hover-icon__container" data-group-extra-item>
-					<div class="table-flex__cell trades-table__name">
-
-						<a class="font-bold" href="/products/currency/exchange/13017/" data-test="bank-name"
-							data-currency-rates-tab-item="bank_code_kazanbank|address_Москва, Восточная улица, 13 "
-							data-currencies-bank-name>3rd Good Bank</a>
-						<div class="font-size-small">
-							м. Автозаводская
-						</div>
-
-
-					</div>
-
-					<div class="table-flex__rate font-size-large  " data-currencies-rate-buy="71.2"
-						data-currencies-code="USD">
-						71,20 ₽
-						<div class="trades-table__refresh-time" data-test="date-update">
-							<span>Время обновления:</span>
-							<span class="text-nowrap">31.12.2123 13:12</span>
-						</div>
-					</div>
-					<div class="table-flex__rate font-size-large   text-nowrap" data-currencies-rate-sell="74.49"
-						data-currencies-code="USD"
-						data-currency-rates-tab-item="tab_open_currency_converter|currencies_rate_sale|currency_USD|bank_code_kazanbank">
-						74,49 ₽
-					</div>
-				</div>
-
-				<!-- Branch 4 without buy rate (good) -->
-				<div data-row-item class="table-flex__row item calculator-hover-icon__container" data-group-extra-item>
-					<div class="table-flex__cell trades-table__name">
-
-						<a class="font-bold" href="/products/currency/exchange/13017/" data-test="bank-name"
-							data-currency-rates-tab-item="bank_code_testbank|address_Москва, Тестовая улица, 1 "
-							data-currencies-bank-name>Bank without buy rate)</a>
-						<div class="font-size-small">
-							м. Тестовская
-						</div>
-
-
-					</div>
-
-					<div class="table-flex__rate font-size-large  " data-currencies-rate-buy="0"
-						data-currencies-code="USD">
-						- <!-- 71,20 ₽ -->
-						<div class="trades-table__refresh-time" data-test="date-update">
-							<span>Время обновления:</span>
-							<span class="text-nowrap">31.12.2123 13:12</span>
-						</div>
-					</div>
-					<div class="table-flex__rate font-size-large   text-nowrap" data-currencies-rate-sell="74.49"
-						data-currencies-code="USD"
-						data-currency-rates-tab-item="tab_open_currency_converter|currencies_rate_sale|currency_USD|bank_code_testbank">
-						74,49 ₽
-					</div>
-				</div>
-
-				<!-- Branch 5 without sell rate (good) -->
-				<div data-row-item class="table-flex__row item calculator-hover-icon__container" data-group-extra-item>
-					<div class="table-flex__cell trades-table__name">
-
-						<a class="font-bold" href="/products/currency/exchange/13017/" data-test="bank-name"
-							data-currency-rates-tab-item="bank_code_testbank|address_Москва, Тестовая улица, 1 "
-							data-currencies-bank-name>Bank without sell rate</a>
-						<div class="font-size-small">
-							м. Тестовская
-						</div>
-
-
-					</div>
-
-					<div class="table-flex__rate font-size-large  " data-currencies-rate-buy="71.20"
-						data-currencies-code="USD">
-						71,20 ₽
-						<div class="trades-table__refresh-time" data-test="date-update">
-							<span>Время обновления:</span>
-							<span class="text-nowrap">31.12.2123 13:12</span>
-						</div>
-					</div>
-					<div class="table-flex__rate font-size-large   text-nowrap" data-currencies-rate-sell="0"
-						data-currencies-code="USD"
-						data-currency-rates-tab-item="tab_open_currency_converter|currencies_rate_sale|currency_USD|bank_code_testbank">
-						- <!-- 74,49 ₽ -->
-					</div>
-				</div>
-
-				<!-- Branch 6 without buy and sell rate (bad) -->
-				<div data-row-item class="table-flex__row item calculator-hover-icon__container" data-group-extra-item>
-					<div class="table-flex__cell trades-table__name">
-
-						<a class="font-bold" href="/products/currency/exchange/13017/" data-test="bank-name"
-							data-currency-rates-tab-item="bank_code_testbank|address_Москва, Тестовая улица, 1 "
-							data-currencies-bank-name>Bank without buy and sell</a>
-						<div class="font-size-small">
-							м. Тестовская
-						</div>
-
-
-					</div>
-
-					<div class="table-flex__rate font-size-large  " data-currencies-rate-buy="0"
-						data-currencies-code="USD">
-						- <!-- 71,20 ₽ -->
-						<div class="trades-table__refresh-time" data-test="date-update">
-							<span>Время обновления:</span>
-							<span class="text-nowrap">31.12.2123 13:12</span>
-						</div>
-					</div>
-					<div class="table-flex__rate font-size-large   text-nowrap" data-currencies-rate-sell="0"
-						data-currencies-code="USD"
-						data-currency-rates-tab-item="tab_open_currency_converter|currencies_rate_sale|currency_USD|bank_code_testbank">
-						- <!-- 74,49 ₽ -->
-					</div>
-				</div>
-
-				<!-- Branch 7 with incorrect buy rate (bad) -->
-				<div data-row-item class="table-flex__row item calculator-hover-icon__container" data-group-extra-item>
-				<div class="table-flex__cell trades-table__name">
-
-					<a class="font-bold" href="/products/currency/exchange/13017/" data-test="bank-name"
-						data-currency-rates-tab-item="bank_code_testbank|address_Москва, Тестовая улица, 1 "
-						data-currencies-bank-name>Bank without buy rate)</a>
-					<div class="font-size-small">
-						м. Тестовская
-					</div>
-
-
-				</div>
-
-				<div class="table-flex__rate font-size-large  " data-currencies-rate-buy="-"
-					data-currencies-code="USD">
-					- <!-- 71,20 ₽ -->
-					<div class="trades-table__refresh-time" data-test="date-update">
-						<span>Время обновления:</span>
-						<span class="text-nowrap">31.12.2123 13:12</span>
-					</div>
-				</div>
-				<div class="table-flex__rate font-size-large   text-nowrap" data-currencies-rate-sell="74.49"
-					data-currencies-code="USD"
-					data-currency-rates-tab-item="tab_open_currency_converter|currencies_rate_sale|currency_USD|bank_code_testbank">
-					74,49 ₽
-				</div>
-				</div>
-
-				<!-- Branch 8 with incorrect sell rate (bad) -->
-				<div data-row-item class="table-flex__row item calculator-hover-icon__container" data-group-extra-item>
-				<div class="table-flex__cell trades-table__name">
-
-					<a class="font-bold" href="/products/currency/exchange/13017/" data-test="bank-name"
-						data-currency-rates-tab-item="bank_code_testbank|address_Москва, Тестовая улица, 1 "
-						data-currencies-bank-name>Bank with incorrect sell rate</a>
-					<div class="font-size-small">
-						м. Тестовская
-					</div>
-
-
-				</div>
-
-				<div class="table-flex__rate font-size-large  " data-currencies-rate-buy="71.20"
-					data-currencies-code="USD">
-					71,20 ₽
-					<div class="trades-table__refresh-time" data-test="date-update">
-						<span>Время обновления:</span>
-						<span class="text-nowrap">31.12.2123 13:12</span>
-					</div>
-				</div>
-				<div class="table-flex__rate font-size-large   text-nowrap" data-currencies-rate-sell=""
-					data-currencies-code="USD"
-					data-currency-rates-tab-item="tab_open_currency_converter|currencies_rate_sale|currency_USD|bank_code_testbank">
-					- <!-- 74,49 ₽ -->
-				</div>
-				</div>
-
-				<!-- Branch 9 with incorrect date (bad) -->
-				<div data-row-item class="table-flex__row item calculator-hover-icon__container" data-group-extra-item>
-					<div class="table-flex__cell trades-table__name">
-
-						<a class="font-bold" href="/products/currency/exchange/13017/" data-test="bank-name"
-							data-currency-rates-tab-item="bank_code_testbank|address_Москва, Тестовая улица, 1 "
-							data-currencies-bank-name>Банк Тест</a>
-						<div class="font-size-small">
-							м. Тестовская
-						</div>
-
-
-					</div>
-
-					<div class="table-flex__rate font-size-large  " data-currencies-rate-buy="71.20"
-						data-currencies-code="USD">
-						71,20 ₽
-						<div class="trades-table__refresh-time" data-test="date-update">
-							<span>Время обновления:</span>
-							<span class="text-nowrap">31122123 13:12</span>
-						</div>
-					</div>
-					<div class="table-flex__rate font-size-large   text-nowrap" data-currencies-rate-sell="74.49"
-						data-currencies-code="USD"
-						data-currency-rates-tab-item="tab_open_currency_converter|currencies_rate_sale|currency_USD|bank_code_testbank">
-						74,49 ₽
-					</div>
-				</div>
-
-				<!-- Branch 10 with not actual updated date (bad) -->
-				<div data-row-item class="table-flex__row item calculator-hover-icon__container" data-group-extra-item>
-					<div class="table-flex__cell trades-table__name">
-
-						<a class="font-bold" href="/products/currency/exchange/13017/" data-test="bank-name"
-							data-currency-rates-tab-item="bank_code_testbank|address_Москва, Тестовая улица, 1 "
-							data-currencies-bank-name>Банк Тест</a>
-						<div class="font-size-small">
-							м. Тестовская
-						</div>
-
-
-					</div>
-
-					<div class="table-flex__rate font-size-large  " data-currencies-rate-buy="71.2"
-						data-currencies-code="USD">
-						71,20 ₽
-						<div class="trades-table__refresh-time" data-test="date-update">
-							<span>Время обновления:</span>
-							<span class="text-nowrap">31.12.2022 13:12</span>
-						</div>
-					</div>
-					<div class="table-flex__rate font-size-large   text-nowrap" data-currencies-rate-sell="74.49"
-						data-currencies-code="USD"
-						data-currency-rates-tab-item="tab_open_currency_converter|currencies_rate_sale|currency_USD|bank_code_testbank">
-						74,49 ₽
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-</body>
-
-</html>
+                <!-- End -->
+            </div>
+        </div>
+    </div>
+</div>
