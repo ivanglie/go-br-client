@@ -8,7 +8,7 @@ import (
 
 func main() {
 	client := br.NewClient()
-	rates, err := client.Rates(br.CNY, br.Novosibirsk)
+	rates, err := client.Rates(br.Novosibirsk)
 	if err != nil {
 		panic(err)
 	}
