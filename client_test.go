@@ -15,7 +15,7 @@ func TestClient_Rates(t *testing.T) {
 		return "file:" + filepath.Join(dir, "/test/bankiru")
 	}
 
-	r, err := c.Rates("")
+	r, err := c.Rates(Novosibirsk)
 	if err != nil {
 		t.Error(err)
 	}
@@ -28,12 +28,11 @@ func TestClient_Rates(t *testing.T) {
 	if bCount := len(b); bCount != 4 {
 		t.Errorf("bCount got = %v, want %v", bCount, 4)
 	}
-}
 
-func TestClient_RatesError(t *testing.T) {
+	// Error
 	Debug = true
 
-	c := NewClient()
+	c = NewClient()
 	c.buildURL = func() string {
 		dir, _ := os.Getwd()
 		return "file:" + filepath.Join(dir, "/test/invalid-bankiru")
@@ -44,7 +43,7 @@ func TestClient_RatesError(t *testing.T) {
 	}
 }
 
-func TestURL_build(t *testing.T) {
+func Test_buildURL(t *testing.T) {
 	buildURL := func() string {
 		return fmt.Sprintf(baseURL, strings.ToLower(string(Moscow)))
 	}

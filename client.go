@@ -168,44 +168,32 @@ func parseBranch(e *colly.HTMLElement) (Branch, error) {
 		return Branch{}, fmt.Errorf("exchange rate is out of date for 24 hours: %v", updatedDate)
 	}
 
-	buyRateString := sanitaze(e.ChildText(".fvORFF"))
-	if len(buyRateString) == 0 {
-		buyRateString = sanitaze(e.ChildText(".guOAzm"))
+	ratesString := sanitaze(e.ChildText(".fvORFF"))
+	if len(ratesString) == 0 {
+		ratesString = sanitaze(e.ChildText(".guOAzm"))
 	}
 
-	buyRateString = strings.Replace(buyRateString, " ", "", -1)
-	if s := strings.Split(buyRateString, "₽"); len(s) >= 2 {
+	var buyRateString, sellRateString string
+	if s := strings.Split(ratesString, "₽"); len(s) >= 2 {
 		buyRateString = s[0]
-	}
-
-	buyRate, err := strconv.ParseFloat(strings.ReplaceAll(buyRateString, ",", "."), 64)
-	if err != nil {
-		return Branch{}, err
-	}
-
-	sellRateString := sanitaze(e.ChildText(".fvORFF"))
-	if len(sellRateString) == 0 {
-		sellRateString = sanitaze(e.ChildText(".guOAzm"))
-	}
-
-	sellRateString = strings.Replace(sellRateString, " ", "", -1)
-	if s := strings.Split(sellRateString, "₽"); len(s) >= 2 {
 		sellRateString = s[1]
 	}
 
+	buyRateString = strings.Replace(buyRateString, " ", "", -1)
+	buyRate, err := strconv.ParseFloat(strings.ReplaceAll(buyRateString, ",", "."), 64)
+	if err != nil || buyRate <= 0 {
+		return Branch{}, err
+	}
+
+	sellRateString = strings.Replace(sellRateString, " ", "", -1)
 	sellRate, err := strconv.ParseFloat(strings.ReplaceAll(sellRateString, ",", "."), 64)
-	if err != nil {
+	if err != nil || sellRate <= 0 {
 		return Branch{}, err
 	}
 
 	subway := sanitaze(e.ChildText(".eybsgm"))
 
-	raw := newBranch(bank, subway, currency, buyRate, sellRate, updatedDate)
-	if raw == (Branch{}) && (buyRate == 0 || sellRate == 0) {
-		return Branch{}, fmt.Errorf("exchange rate is zero: %v", updatedDate)
-	}
-
-	return raw, nil
+	return newBranch(bank, subway, currency, buyRate, sellRate, updatedDate), nil
 }
 
 // sanitaize string.

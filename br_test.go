@@ -86,7 +86,12 @@ func TestRates_String(t *testing.T) {
 		t.Errorf("got= %v, want= %v", got, want)
 	}
 
-	// Negative case
+	// Errors
+	r.Branches[0].Buy = math.NaN()
+	if got = r.String(); len(got) > 0 {
+		t.Errorf("got = %v, want \"\" (emtpy)", got)
+	}
+
 	r.Branches[0].Sell = math.NaN()
 	if got = r.String(); len(got) > 0 {
 		t.Errorf("got = %v, want \"\" (emtpy)", got)
