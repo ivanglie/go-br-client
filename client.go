@@ -189,12 +189,8 @@ func parseBranch(e *colly.HTMLElement) (Branch, error) {
 
 	sSellRate = strings.Replace(sSellRate, " ", "", -1)
 	sellRate, err := strconv.ParseFloat(strings.ReplaceAll(sSellRate, ",", "."), 64)
-	if err != nil || sellRate <= 0 {
+	if err != nil {
 		return Branch{}, err
-	}
-
-	if sellRate <= 0 {
-		return Branch{}, fmt.Errorf("sell rate is zero or less: %v", sellRate)
 	}
 
 	bank := sanitaze(e.ChildText(".gfTHqP"))
