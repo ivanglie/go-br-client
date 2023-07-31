@@ -20,7 +20,7 @@ func TestClient_Rates(t *testing.T) {
 		t.Error(err)
 	}
 
-	b := r.Branches
+	b := r.Items
 	if len(b) == 0 {
 		t.Error("b is empty")
 	}
