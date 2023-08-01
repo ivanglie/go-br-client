@@ -72,13 +72,13 @@ func TestRates_String(t *testing.T) {
 		81.64,
 		time.Date(2023, time.January, 24, 16, 54, 0, 0, loc))
 
-	r := &Rates{}
+	r := &Branches{}
 	r.Currency = currency
 	r.City = Novosibirsk
-	r.Branches = []Branch{b}
+	r.Items = []Branch{b}
 
 	got := r.String()
-	want := `{"currency":"USD","city":"novosibirsk","branches":[{` +
+	want := `{"currency":"USD","city":"novosibirsk","items":[{` +
 		`"bank":"Банк «Открытие»","subway":"м. Октябрьская",` +
 		`"currency":"USD","buy":79.61,"sell":81.64,"updated":"2023-01-24T16:54:00+03:00"}]}`
 
@@ -87,12 +87,12 @@ func TestRates_String(t *testing.T) {
 	}
 
 	// Errors
-	r.Branches[0].Buy = math.NaN()
+	r.Items[0].Buy = math.NaN()
 	if got = r.String(); len(got) > 0 {
 		t.Errorf("got = %v, want \"\" (emtpy)", got)
 	}
 
-	r.Branches[0].Sell = math.NaN()
+	r.Items[0].Sell = math.NaN()
 	if got = r.String(); len(got) > 0 {
 		t.Errorf("got = %v, want \"\" (emtpy)", got)
 	}
